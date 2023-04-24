@@ -45,13 +45,15 @@ header::before {
     background-size: cover;
     animation: zoom 3s;
 }
-.loader{
+
+.loader {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
-.spin{  
+
+.spin {
     height: 120px;
     width: 120px;
     border-radius: 50%;
@@ -60,6 +62,7 @@ header::before {
     animation: spin 0.5s linear infinite;
 
 }
+
 @keyframes zoom {
     0% {
         transform: scale(1.5);
@@ -69,55 +72,64 @@ header::before {
 
         transform: scale(1.1);
     }
-}.hiden{
+}
+
+.hiden {
     display: none;
 }
+
 #hamburguer {
     position: fixed;
     right: 10rem;
-    top: 1rem  ;
+    top: 1rem;
     height: 3rem;
     width: 3rem;
 }
-#hamburguer .linha
-{
-height: 1rem;
-width:  175%;
-background-color:#000;
-box-shadow: 0 .5rem .5rem #fff;
-}
-nav{
 
+#hamburguer .linha {
+    height: 1rem;
+    width: 175%;
+    background-color: #000;
+    box-shadow: 0 .5rem .5rem #fff;
+}
+
+nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position:fixed;
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100vh;
-    width: 15rem;
+    justify-content: space-around;
+    position: fixed;
+    background-color: #000;
+    height: 15vh;
+    margin-top: 11rem;
+    width: 15.7rem;
     z-index: 10;
     right: -50rem;
-    transition:all;
+    transition: all;
 
 }
-.menu-show{
+
+.menu-show {
     right: 0;
 }
-nav li{
+
+nav li {
     list-style: none;
 
 }
+
 nav a {
+
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--text-secundary);
 
 }
+
 nav a:hover {
 
     color: yellow;
 
-    
+
 }
 
 h2,
@@ -132,7 +144,7 @@ h4 {
     border-radius: 7px;
 }
 
-h1  {
+h1 {
     font-size: 4rem;
     background-color: #fff;
     font-family: 'Poppins';
@@ -152,15 +164,19 @@ footer {
 }
 
 #secao-apresentacao {
+    padding: 17rem;
     display: flex;
-
- align-items: center;
-   
-    height: 150vh;
+    flex-direction: row;
+    align-items: center;
+    height: 120vh;
     background-image: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-    background-size:cover;
-    
+    background-size: cover;
+
+
 }
+
+
+
 
 div {
     text-align: left;
@@ -207,9 +223,10 @@ span {
     height: 50px;
     transition: width 10s;
 }
-.botao{
+
+.botao {
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: row-reverse;
     justify-content: center;
     background-color: rgba(0, 0, 252, 0.500);
     color: #fff;
@@ -223,6 +240,7 @@ span {
 
 
 }
+
 p {
     color: #fff;
     background-color: rgba(0, 7, 7, 0.700);
@@ -242,54 +260,59 @@ ul {
 #secao-apresentacao li {
     list-style: none;
 }
-section{
 
-    display: flex ;
+section {
+
+    display: flex;
     flex-direction: row;
     padding: 2rem;
     gap: 2rem;
 }
-#secao-projetos{
-    
 
-    
+#secao-projetos {
+
+
+
     background-image: url('https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-    background-size:cover;
-    
+    background-size: cover;
+
     display: flex;
+    flex-direction: column;
 
     justify-content: center;
     align-items: center;
     background-color: #212121;
 }
+#secao-projetos h1{
+
+    font-size: ;
+}
 
 
-#secao-projetos
-
-ul{
-    background-color:rgba(0, 0, 0, 0.1);
+#secao-projetos ul {
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-     gap: 10rem;
+    gap: 10rem;
     margin-top: 15rem;
     margin-left: 5rem;
     margin-right: 25rem;
     color: var(--text-primary);
 }
 
-#secao-projetos li{
+#secao-projetos li {
     list-style: none;
-    
+
 }
 
 .card {
-    
-  width: 25rem;
-  height: 35rem;
-  position: relative;
-  cursor: pointer;
+
+    width: 25rem;
+    height: 35rem;
+    position: relative;
+    cursor: pointer;
 }
 
 .card-img-wrapper {
@@ -298,7 +321,7 @@ ul{
     background-color: #262626;
     border-radius: 1rem;
 }
-  
+
 .card-img-wrapper img {
     object-fit: cover;
     width: 120%;
@@ -307,11 +330,11 @@ ul{
     opacity: 0.8;
     transition: opacity 0.3s;
 }
-  
+
 .card:hover .card-img-wrapper img {
     opacity: 0.5;
 }
-  
+
 .card-text {
     position: absolute;
     bottom: -3rem;
@@ -327,7 +350,7 @@ ul{
     bottom: 0;
 }
 
-#secao-projetos h3{
+#secao-projetos h3 {
     font-family: var(--font-default);
     font-weight: 700;
     font-size: 2rem;
@@ -335,23 +358,24 @@ ul{
     color: green;
 }
 
-#secao-projetos p{
+#secao-projetos p {
     font-size: 1.5rem;
-    
+
 }
-#secao-orcamento form{
+
+#secao-orcamento form {
     display: grid;
     row-gap: 1.5rem;
     font-size: 2.5rem;
     justify-items: start;
     grid-template-columns: 1fr auto;
-    background-color: #FFF9; 
+    background-color: #FFF9;
     backdrop-filter: blur(2px);
     border-radius: 10px;
     padding: 4rem;
 }
 
-#secao-orcamento form h3{
+#secao-orcamento form h3 {
     background-color: #6a3093;
     color: var(--text-primary);
     position: absolute;
@@ -360,17 +384,17 @@ ul{
     padding: 1rem 3rem;
     border-radius: 10px;
 }
+
 .input-group {
     display: grid;
     grid-template-columns: 1fr auto;
     column-gap: 1rem;
-    padding: 0 1rem;
+    padding: 1rem;
     align-items: center;
 }
 
 input[type=text],
-input[type=number]
-{
+input[type=number] {
     font-size: 2rem;
     outline: none;
     padding: 1rem;
@@ -378,22 +402,47 @@ input[type=number]
     border: 0;
 }
 
-#secao-orcamento form output{
-    grid-column: 2;
-}
+
 
 @media (max-width: 850px) {
-    #secao-projetos ul{
+    main {
+        width: auto;
+        height: auto;
+    }
+
+    header {
+        flex-direction: column;
+
+
+    }
+
+    #secao-apresentacao img {
+
+        width: 60%;
+        border-radius: 50%;
+    }
+   
+    #secao-apresentacao {
+        padding: 1rem;
+        display: flex;
+        width:auto;
+        height: auto;
+        flex-direction: column;
+        
+
+    }
+
+    #secao-projetos ul {
         flex-direction: column;
     }
 }
 
-@media (width < 768px){
-  .only-large{
-    display: none;
-  }
+@media (width < 768px) {
+    .only-large {
+        display: none;
+    }
 }
 
-.only-large{
+.only-large {
     border-radius: 50%;
 }
